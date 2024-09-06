@@ -1,7 +1,7 @@
-import { useState } from 'react'
+;`import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useShopContext } from '../context/ShopContext'
-import Cookies from 'js-cookie'
+import Cookies from 'js-cookie'`
 
 function Login() {
   const [email, setEmail] = useState('')
@@ -9,8 +9,7 @@ function Login() {
   const [error, setError] = useState('')
   const navigate = useNavigate()
   const { setIsLoggedin, setUserData } = useShopContext()
-  const beUrl = import.meta.env.VITE_BACKEND_URL;
-
+  const beUrl = import.meta.env.VITE_BACKEND_URL
 
   const loginUser = async (email, password) => {
     try {
